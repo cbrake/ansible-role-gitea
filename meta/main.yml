@@ -1,0 +1,14 @@
+dependencies: []
+
+galaxy_info:
+  author: cbrake
+  description: Recipe to install Gitea.
+  company: "BEC Systems, LLC"
+  license: "MIT"
+  min_ansible_version: 2.4
+  platforms:
+    - name: Ubuntu
+      versions:
+        - bionic
+  galaxy_tags:
+    - git
