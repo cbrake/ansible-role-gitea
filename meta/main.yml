@@ -1,6 +1,7 @@
 dependencies: []
 
 galaxy_info:
+  role_name: gitea
   author: cbrake
   description: Recipe to install Gitea.
   company: "BEC Systems, LLC"
