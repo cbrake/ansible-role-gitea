@@ -3,7 +3,7 @@ dependencies: []
 galaxy_info:
   role_name: gitea
   author: cbrake
-  description: Recipe to install Gitea.
+  description: Simple role to install Gitea.
   company: "BEC Systems, LLC"
   license: "MIT"
   min_ansible_version: 2.4
