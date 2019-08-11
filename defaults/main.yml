@@ -1,1 +1,2 @@
-gitea_version: 1.8.3
+gitea_version: 1.9.0
+gitea_data_dir: /var/lib/gitea
