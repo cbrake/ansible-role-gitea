@@ -18,6 +18,14 @@
     - /var/lib/gitea
     - /etc/gitea
 
+- name: get stats for db
+  stat: path="{{ gitea_data_dir }}/gitea.db"
+  register: db_file_result
+
+- name: backup database
+  shell: cp {{ gitea_data_dir }}/gitea.db {{ gitea_data_dir }}/gitea.db_$(date -Iseconds)
+  when: db_file_result.stat.exists
+
 - name: fetch gitea
   get_url:
     url: https://dl.gitea.io/gitea/{{ gitea_version }}/gitea-{{ gitea_version }}-linux-amd64
