@@ -18,6 +18,10 @@
     - /var/lib/gitea
     - /etc/gitea
 
+- name: create app.ini
+  copy: content="{{ gitea_app_ini }}" dest="/etc/gitea/app.ini" owner=git
+  notify: restart gitea
+
 - name: get stats for db
   stat: path="{{ gitea_data_dir }}/gitea.db"
   register: db_file_result
