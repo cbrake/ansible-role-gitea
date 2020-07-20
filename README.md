@@ -1,6 +1,6 @@
 # Gitea Ansible role
 
-Ansible role to install gitea
+Ansible role to install gitea.
 
 ## Example usage
 
