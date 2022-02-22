@@ -35,13 +35,14 @@
 - name: fetch gitea
   get_url:
     url:
-      https://dl.gitea.io/gitea/{{ gitea_version }}/gitea-{{ gitea_version
-      }}-linux-amd64
+      https://github.com/go-gitea/gitea/releases/download/v{{ gitea_version
+      }}/gitea-{{ gitea_version }}-linux-amd64
     dest: /usr/local/bin/gitea
     mode: 0755
     checksum:
       "sha256:https://github.com/go-gitea/gitea/releases/download/v{{
       gitea_version}}/gitea-{{ gitea_version }}-linux-amd64.sha256"
+
   register: fetch
   notify:
     - restart gitea
