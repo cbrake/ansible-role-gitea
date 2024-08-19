@@ -1,4 +1,4 @@
-- name: reload systemd
+- name: reload systemd gitea
   command: systemctl daemon-reload
 
 - name: restart gitea
